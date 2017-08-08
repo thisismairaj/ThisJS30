@@ -1,0 +1,39 @@
+body{
+	background: url('bg.jpg') top no-repeat;
+	background-size: cover;
+}
+.keys{
+	background-color: none;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20% 0;
+}
+.key{
+	display: inline-block;
+	width: 150px;
+	background: rgba(0,0,0,0.4);
+	transition: all .07s ease;
+	padding: 20px 15px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #fff;
+	border: 5px solid #000;
+	border-radius: 5px;
+}
+.key kbd{
+	display: block;
+	font-size:25px;
+	font-weight:400;
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}
+.sound {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  color: #ffc600;
+}

@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
 <div class="keys">
 	<div data-key="65" class="key">
 		<kbd>A</kbd>
@@ -20,7 +21,7 @@
 		<kbd>D</kbd>
 		<span class="sound">kick</span>
 	</div>
-	<div data-key="70" class="key">
+	<div data-key="70"
 		<kbd>F</kbd>
 		<span class="sound">openhat</span>
 	</div>
@@ -43,7 +44,7 @@
 	<div data-key="76" class="key">
 		<kbd>L</kbd>
 		<span class="sound">tink</span>
-	</div>
+</div>
 </div>
 	
 	<audio data-key="65" src="sounds/clap.wav"></audio>
@@ -58,10 +59,11 @@
 
 <script>
 
+
 // plays audio!
 function playSound(e){
 	const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-;	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+	const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
 	if(!audio) return; // stop the function from running all together
 	audio.currentTime = 0; // revind to start
 	audio.play(); // play it!

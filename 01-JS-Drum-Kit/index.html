@@ -78,7 +78,7 @@ function removeTransition(e){
 
 // catches div.key elements
 const keys = document.querySelectorAll('.key');
-keys.forEach( key => key.addEventListener('transitionend', removeTransition));
+keys.forEach( key => window.addEventListener('transitionend', removeTransition));
 
 // detects keys pressed
 window.addEventListener('keydown', playSound);
